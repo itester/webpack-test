@@ -1,0 +1,33 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "webpack test",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"/*,
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"*/
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itester/webpack-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itester/webpack-test/issues"
+  },
+  "homepage": "https://github.com/itester/webpack-test#readme",
+  "devDependencies": {
+    "babel": "^6.1.18",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-react": "^6.1.18",
+    "react": "^0.14.3",
+    "webpack": "^1.12.9"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
