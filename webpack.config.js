@@ -1,6 +1,6 @@
 var path = require('path');
-var config = {
-	entry: path.resolve(__dirname, 'app/main.js'),
+module.exports = {
+	entry: path.resolve(__dirname, 'app/main.jsx'),
 	output: {
 		path: path.resolve(__dirname, 'build'),
 		filename: 'bundle.js'
@@ -8,13 +8,11 @@ var config = {
 	module: {
 		loaders: [{
 			test: /\.jsx?$/,
-    	exclude: /node_modules/, 
-			loaders: ['babel']/*,
+			exclude: /node_modules/,
+			loader: 'babel',
 			query: {
-				presets: ['react']
-			}*/
+				presets: ['es2015', 'react']
+			}
 		}]
 	}
 };
-
-module.exports = config;
