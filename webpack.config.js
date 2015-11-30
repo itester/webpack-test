@@ -13,7 +13,14 @@ module.exports = {
 		path: path.resolve(__dirname, 'build'),
 		filename: '[name].js'
 	},
-	module: {
+	module: {/*
+		preLoaders: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'jshint-loader'
+			}
+		],*/
 		loaders: [{
 			test: /\.jsx?$/,
 			exclude: /node_modules/,
